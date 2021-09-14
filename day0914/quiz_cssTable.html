@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	/* 테이블만하면 맨 겉테두리만 생김 */
+	/* th만 하면 위에 각 태그별 테두리만 생김*/
+	/* #ccc 색 지정 안해주면 뼈대처럼 나옴 */
+	table, th, td{
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+	}
+	
+	th{
+		background-color:#ccc;
+	}
+
+</style>
+
+</head>
+<body>
+
+<h1>1박 2일 가족 여행 코스</h1>
+	<ul>
+		<li>1일차</li>
+			<ul style="list-style: none" >
+				<li>a.해녀박물관</li>
+				<li>b.낚시체험</li>
+			</ul>
+		
+		<li>2일차</li>
+			<ul style="list-style: none">
+				<li>c.용눈이오름</li>
+				<li>d.만장굴</li>
+				<li>e.카약체험</li>
+			</ul>
+	</ul>
+	
+	
+	<table>
+		<h1>Education</h1>
+			<caption>학력 사항</caption>
+				<tr>
+					<th>출신학교</th>
+					<th>전공</th>
+					<th>기간</th>
+					<th>구분</th>		
+				</tr>
+				
+				<tr>
+					<td>XX대학교</td>
+					<td>컴퓨터공학</td>
+					<td>2004.3 ~ 2008.2</td>
+					<td>졸업</td>		
+				</tr>
+				
+				<tr>
+					<td>ooo고등학교</td>
+					<td>-</td>
+					<td>2001.3 ~ 2004.2</td>
+					<td>졸업</td>		
+				</tr>
+				
+				
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.style1{
+		color: #87ceeb;
+		border: solid 5px #e6e6fa;
+		height: 100px;
+	}
+	
+	div.style2{
+	
+		width: 500px;
+		text-align: center;
+		line-height: 100px;
+		margin-left: 50px; /* 태그 바깥중 왼쪽의 여백 */
+		margin-top: 30px;
+		font-size: 1.5em;
+		font-weight: bold;  /* 굵게 속성 */
+		text-decoration: line-through; /* 취소선 */
+		font-family: 'Comic Sans Ms', 'Impact';
+	}
+	
+	/* 로또숫자처럼 디자인 */
+	div.style3{
+		margin-left: 100px;
+		margin-top: 30px;
+		border: solid 3px #cd5c5c;
+		background-color: #db7093;
+		border-radius: 100px;
+		height: 100px;
+		width: 100px;
+		line-height: 100px;
+		font-size: 3em;
+		font-family: 'Comic Sans MS';
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		box-Shadow: 5px 5px 5px gray; /* x,y,blur,색상 */
+	}
+	
+</style>
+
+</head>
+<body>
+<!-- 태그마다 적용안되는 css속성 있음 -->
+<span class="style1">Span Tag</span> <!-- height 적용안됨 -->
+<span>Span Tag2</span>
+<div class="style1 style2">Div Tag</div>
+<div class="style3">7</div>
+
+</body>
+</html>

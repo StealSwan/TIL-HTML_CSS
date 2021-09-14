@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+table, th, td{
+
+	border: 1px solid #ccc;
+}
+
+th{
+
+	padding: 15px /* 셀테두리와 내용사이 간격 */	
+}
+
+tr>td:nth-child(odd){
+	width: 120px;	/* 홀수번째 열의 너비: 120px */
+}
+
+tr>td:nth-child(even){
+	width: 300px;	/* 짝수번째 열너비 */
+}
+
+</style>
+
+</head>
+<body>
+
+	<!--  기본형 : <td colspan="합칠 셀의 개수"> 내용 </td> -->
+	<!-- <th colspan="합칠 셀의 개수"> 내용 </th> -->
+	<table>
+	 <caption>회원 연락처</caption>
+		<tr> <!-- tr은 새로운 행을 의미 -->
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th>주소</th>
+			<td colspan="3"></td>
+		</tr>
+		
+		<tr>
+			<th>자기소개</th>
+			<td colspan=3></td>
+		</tr>
+	</table>
+</body>
+</html>
