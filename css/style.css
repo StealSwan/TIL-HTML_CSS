@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+	p{
+		font: 15px/2em "나눔고딕"; 
+		width: 800px;
+	}
+	
+	p.box1{
+		background-color: #ffe4c4;
+		padding : 20px;
+	}
+	
+	p.box2{
+		background-color: #800080;
+		padding: 20px;
+	}
+	
+	li{
+		list-style: square;
+	}

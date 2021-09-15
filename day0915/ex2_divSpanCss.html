@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	/* sapn 태그에만 적용 가능한 a클래스 */
+	span.a {
+		color: red;
+		font-size: 2em;
+		background-color: #48cccc;
+	}
+	
+	span.b {
+		border: 5px solid gray;
+		border-radius: 50px; /* 테두리 둥글게 */
+		padding: 10px /* 안쪽 여백 */
+	}
+	
+	span.c {
+		border: 5px groove magenta; /* 선종류: solid, dotted, groove, dashed */
+		font-size: 20pt
+	}
+
+	span.d {
+		width: 200px;
+		font-size: 20pt;
+		border: 5px double #23df;
+	}
+
+	div.a {
+		width: 200px;
+		height: 200px;
+		line-height: 200px;
+		font-size: 1.4em;
+		text-align: center;
+		border: 5px inset gray;
+	}
+	
+	div.b{
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		border: 5px dotted purple;
+		color: blue;
+		border-radius: 100px;
+	}
+	
+	div.c{
+		border: 1px solid gray;
+		padding-left: 20px; /* 안쪽 왼쪽 여백 */
+		margin-top: 20px; /* 바깥쪽 위쪽 여백 */
+		width: 200px;
+		font-weight: bold;
+	}
+	
+	div.d{
+		position: absolute; /* 절대좌표 지정 */
+		left: 500px; /* 왼쪽으로부터 */
+		top: 100px; /* 위쪽으로부터 */
+		font-size: 5em;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<span class="a">SapnA태그</span>
+	<span class="b">SapnB태그</span>
+	<span class="c">SapnC태그</span>
+	<span class="d">SapnD태그</span>
+
+	<div class="a">DIV A태그</div>
+	<div class="b">DIV B태그</div>
+	<div class="c">DIV C태그</div>
+	<div class="d">DIV D태그</div>
+	
+</body>
+</html>

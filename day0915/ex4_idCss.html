@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	/* id 가리킬때, #을 사용 */
+	#myimg1{
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		border: 5px solid yellow;
+	}
+	
+	#myimg2{
+		position: relative;
+		left: 100px;
+		top: 200px;
+		width: 200px;
+	}
+	
+	#myimg3{
+		position: absolute;
+		left: 800px;
+		top: 130px;
+	}
+	
+	#myimg4{
+		width: 300px;
+		height: 300px;
+		background-image: url("../image/cook1.jpg");
+		background-repeat: no-repeat;
+	}
+	
+	/* 마우스 클릭시 */
+	#myimg4:active {
+		background-image: url("../image/cook5.jpg");
+	}
+	
+	/* 마우스 오버시 이미지 변경 */
+/* 	#myimg4:hover {
+		background-image: url("../imgae/2.png");	
+	} */
+
+</style>
+
+</head>
+<body>
+
+	<!-- class는 중복 가능 -->
+	<!-- ID는 고유값이기에 중복불가 -->
+	<img alt="이미지없음1" title="음식1" src="../image/1.png" id="myimg1">
+	<img alt="이미지없음2" title="음식2" src="../image/2.png" id="myimg2">
+	<img alt="이미지없음3" title="음식3" src="../image/3.png" id="myimg3">
+	<div id="myimg4"></div>
+
+</body>
+</html>

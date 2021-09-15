@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	/* tb1의 모든 구성요소에 적용 */
+	.tb1{
+		width: 500px;
+		border: 2px groove gray;
+	}
+	
+	/* >: 바로 아래 태그를 의미 */
+	.tb1>thead>tr>th{
+		border: 1px solid gray;
+		background-color: #ffc0cb;
+		color: #ffffff;
+	}
+
+	.tb1>thead>tr{
+		height: 50px;
+		font-size: 1.2em;
+	}
+	
+	.tb1>tbody>tr{
+		height: 30px;
+		text-align: center;
+	}
+	
+	.tb1>tbody>tr>td{
+		color: white;
+		background-color: #db7093;
+	}
+	
+	/* tb2 */
+	.tb2{
+		width: 400px;
+		border: 1px dotted gray;
+		border-collapse: collapse; /* 보더사이 간격 없애기 */
+	}
+	
+	/* 띄어쓰기는 하위 전부 */
+	.tb2 th,tb2 td{
+		border: 1px dotted pink;
+	}
+	
+	.tb2 thead tr{
+		height: 50px;
+		color: purple;
+	}
+	
+	.tb2 img{
+		width: 100px;
+	}
+	
+	/* td 태그의 1번 열의 너비조절 */
+	.tb2 td:nth-child(1) {
+		width: 70px;
+	}
+	
+	/* td태그의 3번 열의 너비 글자색 우측 */
+	.tb2 td:nth-child(3) {
+		width: 100px;
+		color: blue;
+		text-align: right;
+	}
+	
+	/* 테이블 이벤트 css에서 줄수도 있다 */
+	.tb1 tbody td:hover{
+		background-color: white;
+		color: black;
+	}
+	
+	.tb2 tbody tr:hover{
+		background-color: yellow;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<table class="tb1">
+		<caption>[표연습1]</caption>
+		<thead>
+			<tr>
+				<th>이름</th><th>나이</th><th>주소</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>강호동</td><td>23세</td><td>서울시 강남구</td>
+			</tr>
+
+			<tr>
+				<td>유재석</td><td>32세</td><td>강원도 원주시</td>
+			</tr>
+
+			<tr>
+				<td>박명수</td><td>44세</td><td>인천시 남동구</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<hr>
+	
+	<table class="tb2">
+		<caption>[표연습2]</caption>
+		<thead>
+			<tr>
+				<th>치즈명</th><th>사진</th><th>가격</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>에담치즈</td>
+				<td><img alt="에담치즈" src="../image/cheese1.png"></td>
+				<td>6,800원</td>
+			</tr>
+			
+			<tr>
+				<td>고다치즈</td>
+				<td><img alt="고다치즈" src="../image/cheese2.png"></td>
+				<td>9,800원</td>
+			</tr>
+			
+			<tr>
+				<td>블루치즈</td>
+				<td><img alt="블루치즈" src="../image/cheese3.png"></td>
+				<td>12,000원</td>
+			</tr>
+			
+		</tbody>
+	</table>
+
+</body>
+</html>
