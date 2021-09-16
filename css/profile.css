@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+	* {
+		/* 양식을 만들때 css 할 경우, padding을 주는만큼 사이즈가 늘어남 */
+		/* 이건 padding을 아무리줘도 박스 사이즈를 넓히지 않겠다는 설정 */
+		box-sizing: border-box;
+	}
+	
+	body {
+		background: #222;
+		height: 100%;
+		margin: 0;
+	}
+	
+	li,p{
+		line-height: 2.0;
+		font-size: 0.9em;
+	}
+	
+	#container{
+		position: absolute;
+		left: 50%;
+		width: 900px;
+		margin-left: -450px;
+		height: 100%;
+		background: #fff;
+	}
+	
+	aside{
+		float: left;
+		width: 300px;
+		padding: 20px 50px;
+		height: 100%;
+		background: rgb(215,215,215);
+	}
+	
+	
+	#detail{
+		position: relative;
+		top: 80px;
+	}
+	
+	#sns{
+		position: relative;
+		top: 80px;
+	}
+	
+	#main{
+		float: right;
+		width: 600px;
+		height: 100%;
+		padding: 20px;
+	}
+
+	#main>section{
+		width: 500px;
+		padding: 20px;
+		margin: 10px;
+		border-bottom: 1px dotted;
+	}
+	
+	section>p, section>table{
+		margin-left: 50px;
+	}
+	
+	aside h1{
+		font-size: 1.8em;
+	}
+	
+	aside h2{
+		font-size: 1.2em;
+	}
+	
+	#namecard{
+		font-size: 0.9em;
+		color: rgb(99,99,99);
+	}
+	
+	.subtitle{
+		font-size: 1.5em;
+		line-height: 0.9em;
+	}
+	
+	.subtitle::before{
+		content: "";
+		display: block;
+		
+		width: 25px;
+		height: 25px;
+		float: left;
+		margin: 0 15px 0 0;
+	}
+	
+	section>p{
+		font-size: 0.9em;
+	}
