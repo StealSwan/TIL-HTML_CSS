@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- initial-scale=1에서 1은 100%를 의마함 -->
+<meta charset="viewport" content="width=device-width, initial-scale=1">
+<title>미디어 쿼리를 이용한 반응형 웹 테스트</title>
+<style type="text/css">
+
+	body {
+		/* 배경 사진 반복 x */
+		background: url("../bg/bg0.jpg") no-repeat fixed;
+		/* 가득 채우기 */
+		background-size: cover;
+	}
+
+	@media screen and (max-width:1024px) {
+		body {
+			background: url("../bg/bg1.jpg") no-repeat fixed;
+			background-size: cover;
+		}
+	}
+
+	@media screen and (max-width:768px) {
+		body {
+			background: url("../bg/bg2.jpg") no-repeat fixed;
+			background-size: cover;
+		}
+	}
+
+	
+	@media screen and (max-width:320px) {
+		body {
+			background: url("../bg/bg3.jpg") no-repeat fixed;
+			background-size: cover;
+		}
+	}
+	
+</style>
+
+</head>
+<body>
+
+</body>
+</html>
